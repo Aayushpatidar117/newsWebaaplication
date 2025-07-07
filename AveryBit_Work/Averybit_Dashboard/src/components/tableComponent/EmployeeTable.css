@@ -1,0 +1,122 @@
+.table-container {
+  padding: 8px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  overflow-x: auto;
+}
+
+.employee-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.employee-table thead {
+  background-color: #f8f9fa;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 16px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.employee-table th {
+  font-weight: 600;
+  color: #333;
+}
+
+.employee-table tr:last-child td {
+  border-bottom: none;
+}
+
+.name-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-top: 4px;
+}
+
+.performance-bar-container {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.performance-bar {
+  height: 100%;
+  background-color: #36a2eb;
+  border-radius: 4px;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: #d1f0d5;
+  color: #0e6245;
+}
+
+.status-leave {
+  background-color: #fdd8d8;
+  color: #a83737;
+}
+
+.status-remote {
+  background-color: #fff3d0;
+  color: #8a6d27;
+}
+
+@media (max-width: 768px) {
+  .employee-table th,
+  .employee-table td {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+
+  .name-cell {
+    flex-direction: column;
+  }
+
+  .email {
+    font-size: 0.75rem;
+  }
+
+  .status-badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-table th,
+  .employee-table td {
+    font-size: 0.8rem;
+    padding: 10px 6px;
+  }
+
+  .email {
+    font-size: 0.7rem;
+  }
+
+  .status-badge {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}
